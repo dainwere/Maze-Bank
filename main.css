@@ -1,0 +1,154 @@
+@font-face {
+    font-family: Pricedown;
+    src: url(font/pricedow.ttf);
+}
+
+@font-face {
+    font-family: Molot;
+    src: url(font/Molot.otf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body { 
+    background-image: url(img/bg.jpg);
+    width: 100%;
+}
+
+/* Container */
+
+.container {
+    width: 1300px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    height: 100vh;
+}
+
+/* Header */
+
+.header {
+    width: 1200px;
+    height: 200px;
+    display: flex;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Molot;
+}
+
+.header-logo-block::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: red;
+    bottom: -30px;
+}
+
+.header-logo-block {
+    display: flex;
+    margin-top: auto;
+}
+
+.header-logo-img {
+    width: 100px;
+    height: 100px;
+}
+
+.header-logo-title-block {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.header-logo-title {
+    font-size: 56px;
+    font-weight: 300;
+}
+
+.header-logo-title-below {
+    font-size: 30px;
+    letter-spacing: -0.5px;
+}
+
+.header-balance-block {
+    display: flex;
+    height: 200px;
+    margin-left: auto;
+}
+
+.header-balance-title {
+    margin-top: auto;
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.header-balance-info {
+    margin-top: auto;
+    font-size: 20px;
+}
+
+/* Main */
+
+.main {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.main-title-block {
+    width: 1200px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-title {
+    font-size: 48px;
+    font-weight: 300;
+    color: #111;
+    font-family: Impact;
+    text-align: center;
+}
+
+.main-buttons-column {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-button {
+    font-size: 20px;
+    letter-spacing: 2px;
+    display: block;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    background-color: red;
+    border: none;
+    transition: ease;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.main-button:hover {
+    background-color: rgb(188, 0, 0);
+    border: 3px solid black
+}
+
+a {
+    text-decoration: none;
+}

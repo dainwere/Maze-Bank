@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Maze Bank | Withdraw</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="shortcut icon" href="img/favicon.png">
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <div class="header-logo-block">
+                    <img class="header-logo-img" src="img/logo.png">
+                    <div class="header-logo-title-block">
+                        <span class="header-logo-title">Maze Bank</span>
+                        <span class="header-logo-title-below">of Los Santos</span>
+                    </div>
+                </div>
+                <div class="header-balance-block">
+                    <span class="header-balance-title">Account balance</span>
+                    <span class="header-balance-info"> <span id="balance"></span> $</span>
+                </div>
+            </header>
+            <main class="main">
+                <div class="main-account-block">
+                    <span class="main-account">BESurBes</span>
+                    <div class="main-title-block">
+                        <span class="main-title">Select the amount you wish
+                            to withdraw from this account
+                        </span>
+                    </div>
+                </div>
+                <div class="main-ways-block">
+                    <div class="main-ways-column-block">
+                        <div class="main-ways-column">
+                            <button class="main-ways-button" id="plus" onclick="minusFifty()">50$</button>
+                            <button class="main-ways-button" onclick="minusFiveHun()">500$</button>
+                            <button class="main-ways-button" onclick="minusTwoThous()">2500$</button>
+                        </div>
+                        <div class="main-ways-column">
+                            <button class="main-ways-button" onclick="minusTenThous()">10000$</button>
+                            <button class="main-ways-button" onclick="minusTwentyFiveThous()">25000$</button>
+                        </div>
+                    </div>
+                    <div class="return-button-block">
+                        <a id="return-link" href="main.html"><button class="main-ways-button">Main Menu</button></a>
+                    </div>
+                </div>
+            </main>
+            <button id="changebalance-button" class="main-ways-button" onclick="startBalance()">Change balance</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
